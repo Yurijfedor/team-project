@@ -9,9 +9,9 @@
 
   @media screen and (min-width: 1280px) {
     padding-top: 59px;
+  }
 }
-
-.section__label {
+.section-products__label {
   margin-bottom: 15px;
   font-family: "Titan One";
   font-weight: 400;
@@ -23,7 +23,7 @@
   color: $section-label-color;
 }
 
-.section__title {
+.section-products__title {
   margin-bottom: 8px;
   font-family: "Titan One";
   font-weight: 400;
@@ -53,12 +53,12 @@
   padding-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 3 * #{$product-list-gap-tab}) / 3);
+    width: calc((100% - 3 * 16px) / 3);
     margin: 156px 8px 8px 8px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: calc((100% - 3 * #{$product-list-gap-desk}) / 3);
+    width: calc((100% - 3 * 32px) / 3);
     margin: 156px 16px 16px 16px;
   }
 
@@ -95,8 +95,51 @@
     width: 100%;
     height: 280px;
     background-image: url(/images/ice_cream.png);
+    background-size: 280px 280px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(/images/ice_cream.png);
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 224px;
+      background-image: url(/images/coffe.png);
+      background-size: 224px 224px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        & {
+          background-image: url(/images/milk.png);
+        }
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      height: 394px;
+      background-image: url(/images/coffe.png);
+      background-size: 394px 394px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        & {
+          background-image: url(/images/ice_cream.png);
+        }
+      }
+    }
   }
 
   &--coffee::before {
@@ -108,8 +151,51 @@
     width: 100%;
     height: 280px;
     background-image: url(/images/coffe.png);
+    background-size: 280px 280px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(/images/ice_cream.png);
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 224px;
+      background-image: url(/images/coffe.png);
+      background-size: 224px 224px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        & {
+          background-image: url(/images/milk.png);
+        }
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      height: 394px;
+      background-image: url(/images/coffe.png);
+      background-size: 394px 394px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        & {
+          background-image: url(/images/ice_cream.png);
+        }
+      }
+    }
   }
 
   &--milk::before {
@@ -123,6 +209,48 @@
     background-image: url(/images/milk.png);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(/images/ice_cream.png);
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 224px;
+      background-image: url(/images/coffe.png);
+      background-size: 224px 224px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        & {
+          background-image: url(/images/milk.png);
+        }
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      height: 394px;
+      background-image: url(/images/coffe.png);
+      background-size: 394px 394px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        & {
+          background-image: url(/images/ice_cream.png);
+        }
+      }
+    }
   }
 
   &::after {
@@ -171,7 +299,6 @@
   fill: $section-title-color;
 }
 // ---------------------------------------SLIDER----------------------------------
-
 
 .slick-list {
   overflow: hidden;
