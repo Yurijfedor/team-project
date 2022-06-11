@@ -96,6 +96,7 @@ ul {
 }
 
 .products-list__item {
+  width: 280px;
   border-radius: 24px;
   margin-top: 148px;
   padding-bottom: 40px;
